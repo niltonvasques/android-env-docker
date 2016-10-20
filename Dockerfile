@@ -23,6 +23,8 @@ ENV PATH $PATH:$ANDROID_HOME/platform-tools
 ADD entrypoint.sh /home/entrypoint.sh
 RUN chmod +x /home/entrypoint.sh
 
+ENTRYPOINT ["/home/entrypoint.sh"]
+
 #Label
 MAINTAINER Catbag <developer@catbag.com.br>
 LABEL Version="1.0" \
